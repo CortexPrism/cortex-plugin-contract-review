@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-contract-review",
-  "version": "1.0.0",
-  "description": "Legal Contract Review Assistant — Analyze NDAs/MSAs/SOWs/DPAs for risky clauses, non-standard terms, redlines",
+  "version": "1.0.1",
+  "description": "Legal Contract Review Assistant \u2014 Analyze NDAs/MSAs/SOWs/DPAs for risky clauses, non-standard terms, redlines",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-contract-review",
   "homepage": "https://cortexprism.io/marketplace/plugins/contract-review",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "contract_analyze",
@@ -28,6 +31,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
